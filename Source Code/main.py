@@ -6,7 +6,8 @@ import requests
 API_KEY = st.secrets["OPENROUTER_API_KEY"]
 
 # Load portfolio text
-with open("Assets/portfolio.txt", "r", encoding="utf-8") as file:
+file_path = os.path.join(os.path.dirname(__file__), "Assets", "portfolio.txt")
+with open(file_path, "r", encoding="utf-8") as file:
     portfolio = file.read()
 
 # Set page config
