@@ -1,11 +1,9 @@
 import os
 import streamlit as st
 import requests
-from dotenv import load_dotenv
 
 # Load API key
-load_dotenv("Assets/.env")
-API_KEY = os.getenv("OPENROUTER_API_KEY")
+API_KEY = st.secrets["OPENROUTER_API_KEY"]
 
 # Load portfolio text
 with open("Assets/portfolio.txt", "r", encoding="utf-8") as file:
