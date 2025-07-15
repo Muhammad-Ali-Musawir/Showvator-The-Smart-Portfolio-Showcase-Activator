@@ -12,7 +12,7 @@ with open("Source Code/Assets/portfolio.txt", "r", encoding="utf-8") as file:
 # Set page config
 st.set_page_config(
     page_title="Showvator – Portfolio Chatbot",
-    page_icon="Assets/icon.ico",
+    page_icon="Source Code/Assets/icon.ico",
     layout="wide"
 )
 
@@ -46,7 +46,7 @@ st.markdown("""
 # Header section
 col1, col2 = st.columns([0.1, 0.9])
 with col1:
-    st.image("Assets/logo.png", width=72)
+    st.image("Source Code/Assets/logo.png", width=72)
 with col2:
     st.markdown("## 👨‍💼 Showvator – Portfolio Chatbot")
     st.caption("Get to know Muhammad Ali Musawir – Ask anything!")
